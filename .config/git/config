@@ -1,0 +1,25 @@
+[user]
+  # Set via GIT_AUTHOR_NAME and GIT_COMMITTER_NAME environment variables.
+  #name = 
+  
+  # Set via GIT_AUTHOR_EMAIL and GIT_COMMITTER_EMAIL enironment variables.
+  #email = 
+  
+  signingkey = ~/.ssh/id_ed25519_sk.pub
+
+#-------------------------------------------------------------------------------
+# Git Commit Signing
+#-------------------------------------------------------------------------------
+[gpg]
+  # Use SSH to sign commits and tags.
+  format = ssh
+
+[commit]
+  # Sign all commits by default. 
+  gpgsign = true
+
+#-------------------------------------------------------------------------------
+# Repo Initialisation
+#-------------------------------------------------------------------------------
+[init]
+  defaultBranch = main
